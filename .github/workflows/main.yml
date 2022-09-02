@@ -18,7 +18,7 @@ jobs:
         run: echo Hello, world!
         
   deploy-Desenvolvimento:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     environment:
       name: Desenvolvimento
       url: ferhmdiogo@gmail.com
@@ -28,7 +28,7 @@ jobs:
         run: echo Deploy Develop!
         
   deploy-Homologacao:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     environment:
       name: Homologacao
       url: ferhmdiogo@gmail.com
@@ -38,7 +38,7 @@ jobs:
         run: echo Deploy Homolog!
         
   deploy-main:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     environment:
       name: main
       url: ferhmdiogo@gmail.com
