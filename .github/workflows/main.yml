@@ -4,11 +4,9 @@ name: Esteira de Ambientes
 
 
 on:
-
   workflow_dispatch:
 jobs:
   build:
-    if: contains(github.event.label.name, 'deploy Desenvolvimento')
     runs-on: ubuntu-latest
     steps:
       - name: Run a one-line script
